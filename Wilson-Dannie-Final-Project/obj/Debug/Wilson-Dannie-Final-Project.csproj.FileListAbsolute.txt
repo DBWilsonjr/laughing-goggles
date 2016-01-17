@@ -1,0 +1,82 @@
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+D:\Save\School\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Preview.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Preview.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Preview.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+J:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+E:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.About.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Instruct.resources
+D:\CPT 185\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Abilities.accdb
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Abilities.accdb
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.About.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Instruct.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Preview.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+F:\CPT 185 - C#\Wilson-Dannie-Final-Project\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
