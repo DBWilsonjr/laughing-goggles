@@ -12,12 +12,12 @@ How complete is it? Hypothetically, it works to a complete finish. In practice, 
 What needs to be fixed: Too much to even list. By the end of it, I was really burned out and made a lot of mistakes. The code is really scatterbrained in spots. Databases are stupid (I did it for the points; I regret it). In the future, databases will be gone. I can't really see anything else because of how much I hate the databases. I don't know why I thought it would be a good idea for less than 90% of the grade. Seriously, database is terrible.
 
 
-TODO list:
-1) Implement all the originally intended content (mostly classes and character options)
-2) REMOVE THE SODDING ACCESS DATABASES (SQLite or something built-in with Visual Studio, I dunno)
-3) Rewrite the main code. It's a mess and even I have trouble tracking it
-4) Finish the data entry for enemies and abilities
-5) Add more stuff (I had so many ideas~!)
+TODO list:<br />
+1) Implement all the originally intended content (mostly classes and character options)<br />
+2) REMOVE THE SODDING ACCESS DATABASES (SQLite or something built-in with Visual Studio, I dunno)<br />
+3) Rewrite the main code. It's a mess and even I have trouble tracking it<br />
+4) Finish the data entry for enemies and abilities<br />
+5) Add more stuff (I had so many ideas~!)<br />
 
 
 -------------------------------------------------
