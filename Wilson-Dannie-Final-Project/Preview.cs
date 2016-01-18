@@ -47,10 +47,6 @@ namespace Wilson_Dannie_Final_Project
             if (creForm.radHard.Checked == true)
                 Globals.Difficulty = 0;
             Globals.pClass = lblClass.Text.ToString();
-            Globals.s3Name = lblSkill3.Text.ToString();
-            Globals.s3Tip = lblS3Desc.Text.ToString();
-            Globals.s4Name = lblSkill4.Text.ToString();
-            Globals.s4Tip = lblS4Desc.Text.ToString();
             mnform.lblPlayerClass.Text = lblName.Text.ToString() + " the " + lblClass.Text.ToString();
             if (lblClass.Text.ToString() == "Huskarl")
             {

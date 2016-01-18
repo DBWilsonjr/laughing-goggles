@@ -12,8 +12,6 @@ namespace Wilson_Dannie_Final_Project
 {
     public partial class Creator : Form
     {
-        Preview preForm = new Preview();
-
         public Creator()
         {
             InitializeComponent();
@@ -47,10 +45,14 @@ namespace Wilson_Dannie_Final_Project
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string charOp1;
-            charOp1 = listBox1.SelectedItem.ToString();
+            if (listBox1.SelectedIndex != -1)
+                charOp1 = listBox1.SelectedItem.ToString();
+            else
+                charOp1 = "";
             if (charOp1 == "Huskarl")
             {
-                preForm.lblClass.Text = "Huskarl";
+                lblClass.Text = "Huskarl";
+                pcbHero.Image = Properties.Resources.redc;
 
                 lsbColor.Enabled = true;
                 lsbColor.Items.Clear();
@@ -77,7 +79,8 @@ namespace Wilson_Dannie_Final_Project
 
             else if (charOp1 == "Seige Archer")
             {
-                preForm.lblClass.Text = "Seige Archer";
+                lblClass.Text = "Seige Archer";
+                pcbHero.Image = Properties.Resources.bluec;
 
                 lsbColor.Enabled = true;
                 lsbColor.Items.Clear();
@@ -104,7 +107,8 @@ namespace Wilson_Dannie_Final_Project
 
             else if (charOp1 == "Oracle")
             {
-                preForm.lblClass.Text = "Oracle";
+                lblClass.Text = "Oracle";
+                pcbHero.Image = Properties.Resources.yellowc;
 
                 lsbColor.Enabled = true;
                 lsbColor.Items.Clear();
@@ -129,7 +133,8 @@ namespace Wilson_Dannie_Final_Project
 
             else if (charOp1 == "Dryad")
             {
-                preForm.lblClass.Text = "Dryad";
+                lblClass.Text = "Dryad";
+                pcbHero.Image = Properties.Resources.greenc;
 
                 lsbColor.Enabled = true;
                 lsbColor.Items.Clear();
@@ -153,7 +158,8 @@ namespace Wilson_Dannie_Final_Project
 
             else if (charOp1 == "Predator")
             {
-                preForm.lblClass.Text = "Predator";
+                lblClass.Text = "Predator";
+                pcbHero.Image = Properties.Resources.orangec;
 
                 lsbColor.Enabled = true;
                 lsbColor.Items.Clear();
@@ -178,7 +184,8 @@ namespace Wilson_Dannie_Final_Project
 
             else if (charOp1 == "Legionaire")
             {
-                preForm.lblClass.Text = "Legionaire";
+                lblClass.Text = "Legionaire";
+                pcbHero.Image = Properties.Resources.Purplec;
 
                 lsbColor.Enabled = true;
                 lsbColor.Items.Clear();
@@ -205,35 +212,38 @@ namespace Wilson_Dannie_Final_Project
         private void lsbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string charOp2;
-            charOp2 = lsbColor.SelectedItem.ToString();
+            if (lsbColor.SelectedIndex != -1)
+                charOp2 = lsbColor.SelectedItem.ToString();
+            else
+                charOp2 = "";
             if (charOp2 == "Red")
             {
-                preForm.lblColor.Text = "Red";
+                lblColor.Text = "Red";
                 Globals.pColor = "Red";
             }
             if (charOp2 == "Blue")
             {
-                preForm.lblColor.Text = "Blue";
+                lblColor.Text = "Blue";
                 Globals.pColor = "Blue";
             }
             if (charOp2 == "Yellow")
             {
-                preForm.lblColor.Text = "Yellow";
+                lblColor.Text = "Yellow";
                 Globals.pColor = "Yellow";
             }
             if (charOp2 == "Green")
             {
-                preForm.lblColor.Text = "Green";
+                lblColor.Text = "Green";
                 Globals.pColor = "Green";
             }
             if (charOp2 == "Orange")
             {
-                preForm.lblColor.Text = "Orange";
+                lblColor.Text = "Orange";
                 Globals.pColor = "Orange";
             }
             if (charOp2 == "Purple")
             {
-                preForm.lblColor.Text = "Purple";
+                lblColor.Text = "Purple";
                 Globals.pColor = "Purple";
             }
 
@@ -242,104 +252,110 @@ namespace Wilson_Dannie_Final_Project
         private void lsbWeapon_SelectedIndexChanged(object sender, EventArgs e)
         {
             string charOp3;
-            charOp3 = lsbWeapon.SelectedItem.ToString();
+            if (lsbWeapon.SelectedIndex != -1)
+            {
+                charOp3 = lsbWeapon.SelectedItem.ToString();
+                lblWeapon.Text = charOp3;
+            }
+            else
+                charOp3 = "";
             if (charOp3 == "Sword")
             {
-                preForm.lblSkill1.Text = "Slash";
+                lblSkill1.Text = "Slash";
                 Globals.s1Name = "Slash";
-                preForm.lblS1Desc.Text = "A basic swinging attack with a blade";
+                lblS1Desc.Text = "A basic swinging attack with a blade";
                 Globals.s1Tip = "A basic swinging attack with a blade";
-                preForm.lblSkill2.Text = "Broadsweep";
+                lblSkill2.Text = "Broadsweep";
                 Globals.s2Name = "Broadsweep";
-                preForm.lblS2Desc.Text = "A wide-arcing attack that cuts through armor";
+                lblS2Desc.Text = "A wide-arcing attack that cuts through armor";
                 Globals.s2Tip = "A wide-arcing attack that cuts through armor";
             }
             if (charOp3 == "Handaxe")
             {
-                preForm.lblSkill1.Text = "Slash";
+                lblSkill1.Text = "Slash";
                 Globals.s1Name = "Slash";
-                preForm.lblS1Desc.Text = "A basic swinging attack with a blade";
+                lblS1Desc.Text = "A basic swinging attack with a blade";
                 Globals.s1Tip = "A basic swinging attack with a blade";
-                preForm.lblSkill2.Text = "Cleave";
+                lblSkill2.Text = "Cleave";
                 Globals.s2Name = "Cleave";
-                preForm.lblS2Desc.Text = "A heavy cutting attack";
+                lblS2Desc.Text = "A heavy cutting attack";
                 Globals.s2Tip = "A heavy cutting attack";
             }
             if (charOp3 == "Spear")
             {
-                preForm.lblSkill1.Text = "Stab";
+                lblSkill1.Text = "Stab";
                 Globals.s1Name = "Stab";
-                preForm.lblS1Desc.Text = "A quick  thrust with a pointed weapon";
+                lblS1Desc.Text = "A quick  thrust with a pointed weapon";
                 Globals.s1Tip = "A quick  thrust with a pointed weapon";
-                preForm.lblSkill2.Text = "Lunge";
+                lblSkill2.Text = "Lunge";
                 Globals.s2Name = "Lunge";
-                preForm.lblS2Desc.Text = "A charging attack aimed to impale";
+                lblS2Desc.Text = "A charging attack aimed to impale";
                 Globals.s2Tip = "A charging attack aimed to impale";
             }
             if (charOp3 == "Mace")
             {
-                preForm.lblSkill1.Text = "Bash";
+                lblSkill1.Text = "Bash";
                 Globals.s1Name = "Bash";
-                preForm.lblS1Desc.Text = "A smashing attack";
+                lblS1Desc.Text = "A smashing attack";
                 Globals.s1Tip = "A smashing attack";
-                preForm.lblSkill2.Text = "Grand Slam";
+                lblSkill2.Text = "Grand Slam";
                 Globals.s2Name = "Grand Slam";
-                preForm.lblS2Desc.Text = "A wild swing at full strength";
+                lblS2Desc.Text = "A wild swing at full strength";
                 Globals.s2Tip = "A wild swing at full strength";
             }
             if (charOp3 == "Hammer")
             {
-                preForm.lblSkill1.Text = "Bash";
+                lblSkill1.Text = "Bash";
                 Globals.s1Name = "Bash";
-                preForm.lblS1Desc.Text = "A smashing attack";
+                lblS1Desc.Text = "A smashing attack";
                 Globals.s1Tip = "A smashing attack";
-                preForm.lblSkill2.Text = "Bonecrusher";
+                lblSkill2.Text = "Bonecrusher";
                 Globals.s2Name = "Bonecrusher";
-                preForm.lblS2Desc.Text = "A mighty downward smash";
+                lblS2Desc.Text = "A mighty downward smash";
                 Globals.s2Tip = "A mighty downward smash";
             }
             if (charOp3 == "Staff")
             {
-                preForm.lblSkill1.Text = "Bash";
+                lblSkill1.Text = "Bash";
                 Globals.s1Name = "Bash";
-                preForm.lblS1Desc.Text = "A smashing attack";
+                lblS1Desc.Text = "A smashing attack";
                 Globals.s1Tip = "A smashing attack";
-                preForm.lblSkill2.Text = "Charged Strike";
+                lblSkill2.Text = "Charged Strike";
                 Globals.s2Name = "Charged Strike";
-                preForm.lblS2Desc.Text = "Magical power channeled through the staff";
+                lblS2Desc.Text = "Magical power channeled through the staff";
                 Globals.s2Tip = "Magical power channeled through the staff";
             }
             if (charOp3 == "Bow")
             {
-                preForm.lblSkill1.Text = "Shot";
+                lblSkill1.Text = "Shot";
                 Globals.s1Name = "Shot";
-                preForm.lblS1Desc.Text = "A simple shooting attack";
+                lblS1Desc.Text = "A simple shooting attack";
                 Globals.s1Tip = "A simple shooting attack";
-                preForm.lblSkill2.Text = "Aimed Shot";
+                lblSkill2.Text = "Aimed Shot";
                 Globals.s2Name = "Aimed Shot";
-                preForm.lblS2Desc.Text = "A targetted attack at the enemy's weakpoint";
+                lblS2Desc.Text = "A targetted attack at the enemy's weakpoint";
                 Globals.s2Tip = "A targetted attack at the enemy's weakpoint";
             }
             if (charOp3 == "Sling")
             {
-                preForm.lblSkill1.Text = "Shot";
+                lblSkill1.Text = "Shot";
                 Globals.s1Name = "Shot";
-                preForm.lblS1Desc.Text = "A simple shooting attack";
+                lblS1Desc.Text = "A simple shooting attack";
                 Globals.s1Tip = "A basic swinging attack with a blade";
-                preForm.lblSkill2.Text = "Head Shot";
+                lblSkill2.Text = "Head Shot";
                 Globals.s2Name = "Head Shot";
-                preForm.lblS2Desc.Text = "A shot aimed right between the eyes";
+                lblS2Desc.Text = "A shot aimed right between the eyes";
                 Globals.s2Tip = "A shot aimed right between the eyes";
             }
             if (charOp3 == "Gun")
             {
-                preForm.lblSkill1.Text = "Shot";
+                lblSkill1.Text = "Shot";
                 Globals.s1Name = "Shot";
-                preForm.lblS1Desc.Text = "A simple shooting attack";
+                lblS1Desc.Text = "A simple shooting attack";
                 Globals.s1Tip = "A simple shooting attack";
-                preForm.lblSkill2.Text = "Spread Shot";
+                lblSkill2.Text = "Spread Shot";
                 Globals.s2Name = "Spread Shot";
-                preForm.lblS2Desc.Text = "A wide-area attack intend to land hits";
+                lblS2Desc.Text = "A wide-area attack intend to land hits";
                 Globals.s2Tip = "A wide-area attack intended to land hits";
             }
         }
@@ -347,88 +363,95 @@ namespace Wilson_Dannie_Final_Project
         private void lsbOffhand_SelectedIndexChanged(object sender, EventArgs e)
         {
             string charOp4;
-            charOp4 = lsbOffhand.SelectedItem.ToString();
+            if (lsbOffhand.SelectedIndex != -1)
+            {
+                charOp4 = lsbOffhand.SelectedItem.ToString();
+                lblOffhand.Text = charOp4;
+            }
+            else
+                charOp4 = "";
+            
             if (charOp4 == "Shield")
             {
-                preForm.lblSkill3.Text = "Defend";
-                preForm.lblS3Desc.Text = "Protects the shieldbearer from damage";
+                lblSkill3.Text = "Defend";
+                lblS3Desc.Text = "Protects the shieldbearer from damage";
                 Globals.s3Name = "Defend";
                 Globals.s3Tip = "Protects the shieldbearer from damage";
             }
             if (charOp4 == "Dagger")
             {
-                preForm.lblSkill3.Text = "Bleed Attack";
-                preForm.lblS3Desc.Text = "Causes bleeding damage over time";
+                lblSkill3.Text = "Bleed Attack";
+                lblS3Desc.Text = "Causes bleeding damage over time";
                 Globals.s3Name = "Bleed Attack";
                 Globals.s3Tip = "Causes bleeding damage over time";
             }
             if (charOp4 == "Steel Song")
             {
-                preForm.lblSkill3.Text = "Steel Song";
-                preForm.lblS3Desc.Text = "Gives the singer resistance to damage for 4 rounds";
+                lblSkill3.Text = "Steel Song";
+                lblS3Desc.Text = "Gives the singer resistance to damage for 4 rounds";
                 Globals.s3Name = "Steel Song";
                 Globals.s3Tip = "Gives the singer resistance to damage for 4 turns";
             }
             if (charOp4 == "Piercing Arrows")
             {
-                preForm.lblSkill3.Text = "Piercing Shot";
-                preForm.lblS3Desc.Text = "Deals extra damage to the enemy";
+                lblSkill3.Text = "Piercing Shot";
+                lblS3Desc.Text = "Deals extra damage to the enemy";
                 Globals.s3Name = "Piercing Shot";
                 Globals.s3Tip = "Deals extra damage to the enemy";
             }
             if (charOp4 == "Poison Arrows")
             {
-                preForm.lblSkill3.Text = "Poisoned Shot";
-                preForm.lblS3Desc.Text = "Poisons the enemy, causing damage over time";
+                lblSkill3.Text = "Poisoned Shot";
+                lblS3Desc.Text = "Poisons the enemy, causing damage over time";
                 Globals.s3Name = "Poisoned shot";
                 Globals.s3Tip = "Poisons the enemy, causing damage over time";
             }
             if (charOp4 == "Tarot")
             {
-                preForm.lblSkill3.Text = "Tarot Card";
-                preForm.lblS3Desc.Text = "Causes a variety of damaging effects";
+                lblSkill3.Text = "Tarot Card";
+                lblS3Desc.Text = "Causes a variety of damaging effects";
                 Globals.s3Name = "Tarot Card";
                 Globals.s3Tip = "Causes a variety of damaging effects";
             }
             if (charOp4 == "Crystal")
             {
-                preForm.lblSkill3.Text = "Divination";
-                preForm.lblS3Desc.Text = "Adds a random buff";
+                lblSkill3.Text = "Divination";
+                lblS3Desc.Text = "Adds a random buff";
                 Globals.s3Name = "Divination";
                 Globals.s3Tip = "Adds a random buff";
             }
             if (charOp4 == "Wand")
             {
-                preForm.lblSkill3.Text = "Cursing Strike";
-                preForm.lblS3Desc.Text = "Hits the target with a random curse";
+                lblSkill3.Text = "Cursing Strike";
+                lblS3Desc.Text = "Hits the target with a random curse";
                 Globals.s3Name = "Cursing Strike";
                 Globals.s3Tip = "Hits the target with a random curse";
             }
             if (charOp4 == "Scripture")
             {
-                preForm.lblSkill3.Text = "Healing Light";
-                preForm.lblS3Desc.Text = "Recovers a large amount of health";
+                lblSkill3.Text = "Healing Light";
+                lblS3Desc.Text = "Recovers a large amount of health";
                 Globals.s3Name = "Healing Light";
                 Globals.s3Tip = "Recovers a large amount of health";
             }
             if (charOp4 == "Athame")
             {
-                preForm.lblSkill3.Text = "Blood Letting";
-                preForm.lblS3Desc.Text = "Boosts attack power at the expense of health";
+                lblSkill3.Text = "Blood Letting";
+                lblS3Desc.Text = "Boosts attack power at the expense of health";
                 Globals.s3Name = "Blood Letting";
                 Globals.s3Tip = "Boosts attack power at the expense of health";
             }
             if (charOp4 == "Hollow Bullet")
             {
-                preForm.lblSkill3.Text = "Hollowed Shot";
-                preForm.lblS3Desc.Text = "A shot designed to cause extra pain";
+                lblSkill3.Text = "Hollowed Shot";
+                lblS3Desc.Text = "A shot designed to cause extra pain";
                 Globals.s3Name = "Hollowed shot";
                 Globals.s3Tip = "A shot designed to cause extra pain";
             }
             if (charOp4 == "Lightning Bullet")
             {
-                preForm.lblSkill3.Text = "Sudden Shot";
-                preForm.lblS3Desc.Text = "A shot that always finds its target";
+                lblSkill3.Text = "Sudden Shot";
+                lblS3Desc.Text = "A shot that always finds its target";
                 Globals.s3Name = "Sudden Shot";
                 Globals.s3Tip = "A shot that always finds its target";
             }
@@ -438,47 +461,50 @@ namespace Wilson_Dannie_Final_Project
         private void lsbSpecial_SelectedIndexChanged(object sender, EventArgs e)
         {
             string charOp5;
-            charOp5 = lsbSpecial.SelectedItem.ToString();
+            if (lsbSpecial.SelectedIndex != -1)
+                charOp5 = lsbSpecial.SelectedItem.ToString();
+            else
+                charOp5 = "";
             if (charOp5 == "Red Strike")
             {
-                preForm.lblSkill4.Text = "Red Strike";
+                lblSkill4.Text = "Red Strike";
                 Globals.s4Name = "Red Strike";
-                preForm.lblS4Desc.Text = "A red-colored attack";
+                lblS4Desc.Text = "A red-colored attack";
                 Globals.s4Tip = "a red-colored attack";
             }
             if (charOp5 == "Blue Strike")
             {
-                preForm.lblSkill4.Text = "Blue Strike";
+                lblSkill4.Text = "Blue Strike";
                 Globals.s4Name = "Blue Strike";
-                preForm.lblS4Desc.Text = "A blue-colored attack";
+                lblS4Desc.Text = "A blue-colored attack";
                 Globals.s4Tip = "a blue-colored attack";
             }
             if (charOp5 == "Yellow Strike")
             {
-                preForm.lblSkill4.Text = "Yellow Strike";
+                lblSkill4.Text = "Yellow Strike";
                 Globals.s4Name = "Yellow Strike";
-                preForm.lblS4Desc.Text = "A yellow-colored attack";
+                lblS4Desc.Text = "A yellow-colored attack";
                 Globals.s4Tip = "a yellow-colored attack";
             }
             if (charOp5 == "Green Strike")
             {
-                preForm.lblSkill4.Text = "Green Strike";
+                lblSkill4.Text = "Green Strike";
                 Globals.s4Name = "Green Strike";
-                preForm.lblS4Desc.Text = "A green-colored attack";
+                lblS4Desc.Text = "A green-colored attack";
                 Globals.s4Tip = "a green-colored attack";
             }
             if (charOp5 == "Orange Strike")
             {
-                preForm.lblSkill4.Text = "Orange Strike";
+                lblSkill4.Text = "Orange Strike";
                 Globals.s4Name = "Orange Strike";
-                preForm.lblS4Desc.Text = "A orange-colored attack";
+                lblS4Desc.Text = "A orange-colored attack";
                 Globals.s4Tip = "a orange-colored attack";
             }
             if (charOp5 == "Purple Strike")
             {
-                preForm.lblSkill4.Text = "Purple Strike";
+                lblSkill4.Text = "Purple Strike";
                 Globals.s4Name = "Purple Strike";
-                preForm.lblS4Desc.Text = "A purple-colored attack";
+                lblS4Desc.Text = "A purple-colored attack";
                 Globals.s4Tip = "a purple-colored attack";
             }
 
@@ -491,16 +517,30 @@ namespace Wilson_Dannie_Final_Project
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            txtName.Focus();
             txtName.Clear();
             listBox1.ClearSelected();
+            lblClass.Text = "                            ";
+            pcbHero.Image = null;
             lsbColor.Enabled = false;
             lsbColor.Items.Clear();
+            lblColor.Text = "                            ";
             lsbWeapon.Enabled = false;
             lsbWeapon.Items.Clear();
+            lblWeapon.Text = "                            ";
+            lblSkill1.Text = "Name";
+            lblS1Desc.Text = "Description";
+            lblSkill2.Text = "Name";
+            lblS2Desc.Text = "Description";
             lsbOffhand.Enabled = false;
             lsbOffhand.Items.Clear();
+            lblOffhand.Text = "                            ";
+            lblSkill3.Text = "Name";
+            lblS3Desc.Text = "Description";
             lsbSpecial.Enabled = false;
             lsbSpecial.ClearSelected();
+            lblSkill4.Text = "Name";
+            lblS4Desc.Text = "Description";
             radEasy.Checked = false;
             radNorm.Checked = false;
             radHard.Checked = false;
@@ -510,9 +550,74 @@ namespace Wilson_Dannie_Final_Project
         {
             if (txtName.Text != "" && listBox1.SelectedIndex != -1 && lsbColor.SelectedIndex != -1 && lsbWeapon.SelectedIndex != -1 && lsbOffhand.SelectedIndex != -1 && lsbSpecial.SelectedIndex != -1 && radEasy.Checked == true || radNorm.Checked == true || radHard.Checked == true)
             {
-                preForm.lblName.Text = txtName.Text.ToString();
+                MainGame mnform = new MainGame();
+                if (radEasy.Checked == true)
+                    Globals.Difficulty = 10;
+                if (radNorm.Checked == true)
+                    Globals.Difficulty = 5;
+                if (radHard.Checked == true)
+                    Globals.Difficulty = 0;
+                Globals.pClass = lblClass.Text.ToString();
+                mnform.lblPlayerClass.Text = txtName.Text.ToString() + " the " + lblClass.Text.ToString();
+                if (lblClass.Text.ToString() == "Huskarl")
+                {
+                    Globals.placa = 1;
+                    mnform.pcbHero.Image = Properties.Resources.redc;
+                }
+                if (lblClass.Text.ToString() == "Seige Archer")
+                {
+                    mnform.pcbHero.Image = Properties.Resources.bluec;
+                    Globals.placa = 2;
+                }
+                if (lblClass.Text.ToString() == "Oracle")
+                {
+                    mnform.pcbHero.Image = Properties.Resources.yellowc;
+                    Globals.placa = 3;
+                }
+                if (lblClass.Text.ToString() == "Dryad")
+                {
+                    mnform.pcbHero.Image = Properties.Resources.greenc;
+                    Globals.placa = 4;
+                }
+                if (lblClass.Text.ToString() == "Predator")
+                {
+                    mnform.pcbHero.Image = Properties.Resources.orangec;
+                    Globals.placa = 5;
+                }
+                if (lblClass.Text.ToString() == "Legionaire")
+                {
+                    mnform.pcbHero.Image = Properties.Resources.Purplec;
+                    Globals.placa = 6;
+                }
+                switch (lblSkill3.Text.ToString())
+                {
+                    case "Defend": Globals.ab3 = 301; break;
+                    case "Bleed Attack": Globals.ab3 = 320; break;
+                    case "Steel Song": Globals.ab3 = 302; break;
+                    case "Piercing Arrows": Globals.ab3 = 303; break;
+                    case "Poison Arrows": Globals.ab3 = 321; break;
+                    case "Tarot Card": Globals.ab3 = 330; break;
+                    case "Divination": Globals.ab3 = 308; break;
+                    case "Cursing Strike": Globals.ab3 = 322; break;
+                    case "Healing Light": Globals.ab3 = 304; break;
+                    case "Blood Letting": Globals.ab3 = 305; break;
+                    case "Hollowed Shot": Globals.ab3 = 306; break;
+                    case "Sudden Shot": Globals.ab3 = 307; break;
+
+                }
+
+                switch (lblSkill4.Text.ToString())
+                {
+                    case "Red Strike": Globals.ab4 = 411; break;
+                    case "Blue Strike": Globals.ab4 = 412; break;
+                    case "Yellow Strike": Globals.ab4 = 413; break;
+                    case "Green Strike": Globals.ab4 = 414; break;
+                    case "Orange Strike": Globals.ab4 = 415; break;
+                    case "Purple Strike": Globals.ab4 = 416; break;
+                }
+
                 this.Hide();
-                preForm.ShowDialog();
+                mnform.ShowDialog();
             }
             else
             {
