@@ -38,5 +38,6 @@ namespace Wilson_Dannie_Final_Project
         public static string pClass, pColor, s1Name, s1Tip, s2Name, s2Tip, s3Name, s3Tip, s4Name, s4Tip = "";
         public static int Difficulty;
         public static int placa, ab1, ab2, ab3, ab4;
+        public static int templeHP, templeProt, bonHP, bonDam, bonEvd;
     }
 }

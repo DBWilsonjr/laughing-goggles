@@ -26,9 +26,16 @@ namespace Wilson_Dannie_Final_Project
         CharDataSetTableAdapters.tblPlayersTableAdapter tblPlay = new CharDataSetTableAdapters.tblPlayersTableAdapter();
 
         int DamResult = 0;
-        int pTempHP, pDam, pEvd, pWin, pLoss, btnNum, combo, cd3; int enTempHP, enLAtk, fgtCnt;
-        public int bonHP, bonDam, bonEvd;
+        //Dam Result is a global used in damage calcs. TODO: Check if this should be replaced by a return in the damage methods
+        int pTempHP, pDam, pEvd, pWin, pLoss, btnNum, combo, cd3, fgtCnt;
+        //pTempHP stands in for player's current HP in combat. pDam, pEvd is used with the buttons, could be replaced by a local.
+        //pWin and pLoss are used to set win/lose conditions in combat. Used in multiple places.
+        //btnNum, combo, and cd3 are used with the buttons. combo will likely change in the rewrite. cd3 is cooldown for the 3rd move, needs to be global.
+        //fgtCnt is sorta self-explanatory.
+        int enTempHP, enLAtk;
+        //enTempHP stands in for enemy's current HP in combat. enLAtk tracks the enemy's last action to control how they're used.
         bool pDead = false, mDead = false, gOver = false, gWin = false;
+        //Fairly clear, necessary globals
 
         public MainGame()
         {
@@ -83,7 +90,7 @@ namespace Wilson_Dannie_Final_Project
         private void btnATK1_Click(object sender, EventArgs e)
         {
             //button 1 can double/triple/infinite attack; multiple uses add to combo counter, increasing chances of multiple hits
-            pDam = avatar.FORCE + bonDam + avatar.ABILITY1;
+            pDam = avatar.FORCE + Globals.bonDam + avatar.ABILITY1;
             btnNum = 1;
             combo += 1;
             
@@ -92,11 +99,11 @@ namespace Wilson_Dannie_Final_Project
 
         private void btnATK2_Click(object sender, EventArgs e)
         {
-            pDam = avatar.FORCE + bonDam + avatar.ABILITY2;
+            pDam = avatar.FORCE + Globals.bonDam + avatar.ABILITY2;
             if (avatar.BUFFBIT == 2)
-                pEvd = avatar.EVADE + bonEvd + avatar.BUFFVAL;
+                pEvd = avatar.EVADE + Globals.bonEvd + avatar.BUFFVAL;
             else
-                pEvd = avatar.EVADE + bonEvd;
+                pEvd = avatar.EVADE + Globals.bonEvd;
             btnNum = 2;
             combo = 0;
 
@@ -106,13 +113,13 @@ namespace Wilson_Dannie_Final_Project
         private void btnATK3_Click(object sender, EventArgs e)
         {
             if (avatar.ABILITY3 == 303 || avatar.ABILITY3 == 306)
-                pDam = avatar.FORCE + bonDam + 6;
+                pDam = avatar.FORCE + Globals.bonDam + 6;
             else
-                pDam = avatar.FORCE + bonDam;
+                pDam = avatar.FORCE + Globals.bonDam;
             if (avatar.BUFFBIT == 2)
-                pEvd = avatar.EVADE + bonEvd + avatar.BUFFVAL;
+                pEvd = avatar.EVADE + Globals.bonEvd + avatar.BUFFVAL;
             else
-                pEvd = avatar.EVADE + bonEvd;
+                pEvd = avatar.EVADE + Globals.bonEvd;
             btnNum = 3;
             combo = 0;
 
@@ -121,11 +128,11 @@ namespace Wilson_Dannie_Final_Project
 
         private void btnATK4_Click(object sender, EventArgs e)
         {
-            pDam = avatar.FORCE + bonDam + avatar.ABILITY4;
+            pDam = avatar.FORCE + Globals.bonDam + avatar.ABILITY4;
             if (avatar.BUFFBIT == 2)
-                pEvd = avatar.EVADE + bonEvd + avatar.BUFFVAL;
+                pEvd = avatar.EVADE + Globals.bonEvd + avatar.BUFFVAL;
             else
-                pEvd = avatar.EVADE + bonEvd;
+                pEvd = avatar.EVADE + Globals.bonEvd;
             btnNum = 4;
             combo = 0;
 
@@ -177,8 +184,15 @@ namespace Wilson_Dannie_Final_Project
 
         public void EnemyFinder()
         {
+            /* EnemyFinder() rolls a d30 to find an enemy for the player to fight. The default spread is 10% boss, 10% Green, Orange, or Purple, and
+             * 20% Red, Blue, or Yellow. This both stacks things towards easier enemies (RBY) and makes it more likely that characters made with 0 unlocks
+             * always have their abilities as useful. As you win more fights, the roller starts removing numbers from the top end which lowers the RBY pool
+             * of enemies, raising the odds of facing POG enemies and bosses. This ensures that eventually a boss will be rolled, but odds are far, far better
+             * that the player will be winning enough fights to max out their character and fully protect before that happens. This may or may not be rebalanced.*/
             Random enFind = new Random();
             int enGen, enTable;
+            
+            //Decide if bosses are potential enemies yet
             if (Globals.Difficulty - fgtCnt <= 0)
             {
                 enGen = enFind.Next(1, 30) - fgtCnt;
@@ -187,6 +201,8 @@ namespace Wilson_Dannie_Final_Project
             {
                 enGen = enFind.Next(4, 30) - fgtCnt;
             }
+
+            //Roll for the appropriate enemy
             if (enGen == 1 || enGen == 2 || enGen == 3) //Bosses
             {
                 enTable = enFind.Next(1, 20);
@@ -200,6 +216,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[7]);
                 Enemy.ABILITY3 = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[8]);
                 Enemy.ABILITY4 = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[9]);
+                groupBox2.BackColor = Color.Snow;
             }
             if (enGen == 4 || enGen == 7 || enGen == 10) //Green
             {
@@ -209,6 +226,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.FORCE = Convert.ToInt32(cDS1.tblGreen.Rows[enTable - 1].ItemArray[2]);
                 Enemy.EVADE = Convert.ToInt32(cDS1.tblGreen.Rows[enTable - 1].ItemArray[3]);
                 Enemy.COLOR = 4;
+                groupBox2.BackColor = Color.ForestGreen;
                 Enemy.TEMPLEDAM = Convert.ToInt32(cDS1.tblGreen.Rows[enTable - 1].ItemArray[4]);
                 Enemy.ABILITY1 = Convert.ToInt32(cDS1.tblGreen.Rows[enTable - 1].ItemArray[5]);
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblGreen.Rows[enTable - 1].ItemArray[6]);
@@ -223,6 +241,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.FORCE = Convert.ToInt32(cDS1.tblOrange.Rows[enTable - 1].ItemArray[2]);
                 Enemy.EVADE = Convert.ToInt32(cDS1.tblOrange.Rows[enTable - 1].ItemArray[3]);
                 Enemy.COLOR = 5;
+                groupBox2.BackColor = Color.DarkOrange;
                 Enemy.TEMPLEDAM = Convert.ToInt32(cDS1.tblOrange.Rows[enTable - 1].ItemArray[4]);
                 Enemy.ABILITY1 = Convert.ToInt32(cDS1.tblOrange.Rows[enTable - 1].ItemArray[5]);
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblOrange.Rows[enTable - 1].ItemArray[6]);
@@ -237,6 +256,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.FORCE = Convert.ToInt32(cDS1.tblPurple.Rows[enTable - 1].ItemArray[2]);
                 Enemy.EVADE = Convert.ToInt32(cDS1.tblPurple.Rows[enTable - 1].ItemArray[3]);
                 Enemy.COLOR = 6;
+                groupBox2.BackColor = Color.MediumPurple;
                 Enemy.TEMPLEDAM = Convert.ToInt32(cDS1.tblPurple.Rows[enTable - 1].ItemArray[4]);
                 Enemy.ABILITY1 = Convert.ToInt32(cDS1.tblPurple.Rows[enTable - 1].ItemArray[5]);
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblPurple.Rows[enTable - 1].ItemArray[6]);
@@ -251,6 +271,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.FORCE = Convert.ToInt32(cDS1.tblRed.Rows[enTable - 1].ItemArray[2]);
                 Enemy.EVADE = Convert.ToInt32(cDS1.tblRed.Rows[enTable - 1].ItemArray[3]);
                 Enemy.COLOR = 1;
+                groupBox2.BackColor = Color.Crimson;
                 Enemy.TEMPLEDAM = Convert.ToInt32(cDS1.tblRed.Rows[enTable - 1].ItemArray[4]);
                 Enemy.ABILITY1 = Convert.ToInt32(cDS1.tblRed.Rows[enTable - 1].ItemArray[5]);
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblRed.Rows[enTable - 1].ItemArray[6]);
@@ -265,6 +286,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.FORCE = Convert.ToInt32(cDS1.tblBlue.Rows[enTable - 1].ItemArray[2]);
                 Enemy.EVADE = Convert.ToInt32(cDS1.tblBlue.Rows[enTable - 1].ItemArray[3]);
                 Enemy.COLOR = 2;
+                groupBox2.BackColor = Color.MediumBlue;
                 Enemy.TEMPLEDAM = Convert.ToInt32(cDS1.tblBlue.Rows[enTable - 1].ItemArray[4]);
                 Enemy.ABILITY1 = Convert.ToInt32(cDS1.tblBlue.Rows[enTable - 1].ItemArray[5]);
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblBlue.Rows[enTable - 1].ItemArray[6]);
@@ -279,6 +301,7 @@ namespace Wilson_Dannie_Final_Project
                 Enemy.FORCE = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[2]);
                 Enemy.EVADE = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[3]);
                 Enemy.COLOR = 3;
+                groupBox2.BackColor = Color.Yellow;
                 Enemy.TEMPLEDAM = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[4]);
                 Enemy.ABILITY1 = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[5]);
                 Enemy.ABILITY2 = Convert.ToInt32(cDS1.tblBoss.Rows[enTable - 1].ItemArray[6]);
@@ -453,6 +476,7 @@ namespace Wilson_Dannie_Final_Project
                         DamageCalc(pDam, avatar.COLOR, avatar.BUFFBIT, Enemy.EVADE, Enemy.COLOR, Enemy.BUFFBIT);
 
                         enTempHP -= DamResult;
+                        lblMonHP.Text = enTempHP.ToString();
                         if (enTempHP <= 0)
                         {
                             pgbMonster.Value = 0;
@@ -466,9 +490,7 @@ namespace Wilson_Dannie_Final_Project
                             mDead = true;
                             pWin++;
                             lblPWin.Text = pWin.ToString();
-                            //power-up dialog
-                            PowerUp lvlform = new PowerUp();
-                            lvlform.ShowDialog();
+                            PowerUp();
                             rtbEventLog.AppendText("Defeated " + lblEnName.Text.ToString() + "!");
                             UnlockStuff();
                             if (pgbProt.Value >= 10)
@@ -496,6 +518,7 @@ namespace Wilson_Dannie_Final_Project
                 {
                     EnemyDamCalc(Enemy.FORCE, Enemy.COLOR, Enemy.BUFFBIT, pEvd, avatar.COLOR, avatar.BUFFBIT);
                     pTempHP -= DamResult;
+                    lblPHP.Text = pTempHP.ToString();
                     if (pTempHP <= 0)
                         pgbAvatar.Value = 0;
                     else
@@ -529,12 +552,12 @@ namespace Wilson_Dannie_Final_Project
                 if (Enemy.DEBUFFBIT == 5)
                     rtbEventLog.AppendText(lblEnName.Text.ToString() + " is frozen and cannot move.\n");
             }
-            if (gWin == true)
+            if (mDead == true && gWin == true)
             {
                 MessageBox.Show("Congratulations! You have won the game!", "A winnar is you!");
                 this.Close();
             }
-            if (gOver == true)
+            if (pDead == true && gOver == true)
             {
                 MessageBox.Show("You have lost the game", "Game Over");
                 this.Close();
@@ -752,6 +775,75 @@ namespace Wilson_Dannie_Final_Project
             }
         }
 
+        public void PowerUp()
+        {
+            //rtbEventLog.Visible = false;
+            //btnATK1.Visible = false;
+            //btnATK2.Visible = false;
+            //btnATK3.Visible = false;
+            //btnATK4.Visible = false;
+            //grbPowUp.Visible = true;
+            //radPUTemp.Checked = false;
+            //radPUHP.Checked = false;
+            //radPUAtk.Checked = false;
+            //radPUDef.Checked = false;
+
+            //lblPUTHP.Text = "Temple Health: " + pgbTemple.Value + "/10";
+            //lblPUTProt.Text = "Temple Protection: " + pgbProt.Value + "/10";
+            //lblPUPHP.Text = "Current Bonus: " + bonHP.ToString() + "/100";
+            //lblPUPAtk.Text = "Current Bonus: " + bonDam.ToString() + "/5";
+            //lblPUPDef.Text = "Current Bonus: " + bonEvd.ToString() + "/5";
+
+            //if (bonHP < 100)
+            //    radPUHP.Enabled = true;
+            //if (bonDam < 5)
+            //    radPUAtk.Enabled = true;
+            //if (bonEvd < 5)
+            //    radPUDef.Enabled = true;
+
+            //if (radPUTemp.Checked == true)
+            //{
+            //    if (pgbTemple.Value < 10)
+            //    {
+            //        MessageBox.Show("The temple has been completely restored. Is this okay?", "Temple Improved", MessageBoxButtons.OKCancel);
+            //        DialogResult dr = MessageBox.Show("The temple has been completely restored. Is this okay?", "Temple Improved", MessageBoxButtons.OKCancel);
+            //        switch (dr)
+            //        {
+            //            case DialogResult.OK: pgbTemple.Value = 10; grbPowUp.Visible = false; break;
+            //            case DialogResult.Cancel: radPUTemp.Checked = false; break;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("The temple's protection has increased by 1", "Temple Improved", MessageBoxButtons.OKCancel);
+            //        DialogResult dr = MessageBox.Show("The temple's protection has increased by 1", "Temple Improved", MessageBoxButtons.OKCancel);
+            //        switch (dr)
+            //        {
+            //            case DialogResult.OK: pgbProt.Value += 1; grbPowUp.Visible = false; break;
+            //            case DialogResult.Cancel: radPUTemp.Checked = false; break;
+            //        }
+            //    }
+            //}
+
+            //Are we really going to just load the other form anyway? Is that really the solution? I don't like it.
+
+            //Make globals current
+            Globals.templeHP = pgbTemple.Value;
+            Globals.templeProt = pgbProt.Value;
+            //power-up dialog
+            PowerUp lvlform = new PowerUp();
+            lvlform.ShowDialog();
+            //reset health & health displays from level-up
+            pgbTemple.Value = Globals.templeHP;
+            pgbProt.Value = Globals.templeProt;
+            pgbAvatar.Maximum = avatar.HEALTH + Globals.bonHP;
+            pTempHP = avatar.HEALTH + Globals.bonHP;
+            pgbAvatar.Value = pTempHP;
+            lblPHP.Text = pTempHP.ToString();
+
+
+        }
+
         public void UnlockStuff()
         {
 
@@ -914,28 +1006,32 @@ namespace Wilson_Dannie_Final_Project
 
         public void Restart()
         {
-            fgtCnt++;
-            mDead = false;
-            pDead = false;
+            rtbEventLog.AppendText(" ******* Next Round    ******** \n");
+            if (pDead == true && gWin != true || mDead == true && gOver != true)
+            {
+                fgtCnt++;
+                mDead = false;
+                pDead = false;
 
-            EnemyFinder();
+                EnemyFinder();
 
-            rtbEventLog.Clear();
-            pTempHP = avatar.HEALTH;
-            lblPHP.Text = pTempHP.ToString();
-            pgbAvatar.Maximum = avatar.HEALTH;
-            pgbAvatar.Value = pTempHP;
-            enTempHP = Enemy.HEALTH;
-            pgbMonster.Maximum = Enemy.HEALTH;
-            pgbMonster.Value = enTempHP;
-            lblMonHP.Text = enTempHP.ToString();
-            lblEnTD.Text = Enemy.TEMPLEDAM.ToString();
-            avatar.BUFFBIT = 0;
-            avatar.BUFFVAL = 0;
-            combo = 0;
-            avatar.DEBUFFBIT = 0;
-            avatar.DEBUFFVAL = 0;
-            enLAtk = 0;
+                rtbEventLog.Clear();
+                pgbAvatar.Maximum = avatar.HEALTH + Globals.bonHP;
+                pTempHP = avatar.HEALTH + Globals.bonHP;
+                pgbAvatar.Value = pTempHP;
+                lblPHP.Text = pTempHP.ToString();
+                enTempHP = Enemy.HEALTH;
+                pgbMonster.Maximum = Enemy.HEALTH;
+                pgbMonster.Value = enTempHP;
+                lblMonHP.Text = enTempHP.ToString();
+                lblEnTD.Text = Enemy.TEMPLEDAM.ToString();
+                avatar.BUFFBIT = 0;
+                avatar.BUFFVAL = 0;
+                combo = 0;
+                avatar.DEBUFFBIT = 0;
+                avatar.DEBUFFVAL = 0;
+                enLAtk = 0;
+            }
         }
 
     }

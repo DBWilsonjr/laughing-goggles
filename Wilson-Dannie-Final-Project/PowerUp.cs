@@ -18,31 +18,37 @@ namespace Wilson_Dannie_Final_Project
         {
             InitializeComponent();
 
-            lblTHP.Text = "Temple Health: " + mnForm.pgbTemple.Value + "/10";
-            lblTProt.Text = "Temple Protection: " + mnForm.pgbProt.Value + "/10";
-            lblPHP.Text = "Current Bonus: " + mnForm.bonHP.ToString() + "/100";
-            lblPAtk.Text = "Current Bonus: " + mnForm.bonDam.ToString() + "/5";
-            lblPDef.Text = "Current Bonus: " + mnForm.bonEvd.ToString() + "/5";
+            lblTHP.Text = "Temple Health: " + Globals.templeHP + "/10";
+            lblTProt.Text = "Temple Protection: " + Globals.templeProt + "/10";
+            lblPHP.Text = "Current Bonus: " + Globals.bonHP.ToString() + "/100";
+            lblPAtk.Text = "Current Bonus: " + Globals.bonDam.ToString() + "/5";
+            lblPDef.Text = "Current Bonus: " + Globals.bonEvd.ToString() + "/5";
 
-            if (mnForm.bonHP < 100)
+            if (Globals.bonHP < 100)
                 button2.Enabled = true;
-            if (mnForm.bonDam < 5)
+            else
+                button2.Enabled = false;
+            if (Globals.bonDam < 5)
                 button3.Enabled = true;
-            if (mnForm.bonEvd < 5)
+            else
+                button3.Enabled = false;
+            if (Globals.bonEvd < 5)
                 button4.Enabled = true;
+            else
+                button4.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (mnForm.pgbTemple.Value < 10)
+            if (Globals.templeHP < 10)
             {
-                mnForm.pgbTemple.Value = 10;
+                Globals.templeHP = 10;
                 MessageBox.Show("The temple has been completely restored", "Temple Improved");
                 this.Close();
             }
             else
             {
-                mnForm.pgbProt.Value += 1;
+                Globals.templeProt += 1;
                 MessageBox.Show("The temple's protection has increased by 1", "Temple Improved");
                 this.Close();
             }
@@ -50,21 +56,21 @@ namespace Wilson_Dannie_Final_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            mnForm.bonHP += 20;
+            Globals.bonHP += 20;
             MessageBox.Show("Your health has improved by 20", "Stats Improved");
             this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            mnForm.bonHP += 1;
+            Globals.bonDam += 1;
             MessageBox.Show("Your attack has improved by 1", "Stats Improved");
             this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            mnForm.bonHP += 1;
+            Globals.bonEvd += 1;
             MessageBox.Show("Your defense has improved by 1", "Stats Improved");
             this.Close();
         }
