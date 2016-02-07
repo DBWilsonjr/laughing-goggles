@@ -35,9 +35,9 @@ namespace Wilson_Dannie_Final_Project
 
     class Globals
     {
-        public static string pClass, pColor, s1Name, s1Tip, s2Name, s2Tip, s3Name, s3Tip, s4Name, s4Tip = "";
+        public static string pName, pClass, pColor, s1Name, s1Tip, s2Name, s2Tip, s3Name, s3Tip, s4Name, s4Tip, s4Color = "";
         public static int Difficulty;
-        public static int placa, ab1, ab2, ab3, ab4;
+        public static int placa, ab1, ab1Cool, ab2, ab2Val, ab3, ab3Cool, ab4, ab4Cool;
         public static int templeHP, templeProt, bonHP, bonDam, bonEvd;
     }
 }

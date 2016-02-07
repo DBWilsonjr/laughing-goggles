@@ -50,6 +50,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblOffhand = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.lblS4Desc = new System.Windows.Forms.Label();
             this.lblSkill4 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -69,9 +72,6 @@
             this.lblWeapon = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pcbHero = new System.Windows.Forms.PictureBox();
-            this.lblOffhand = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbHero)).BeginInit();
@@ -83,6 +83,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(134, 20);
             this.txtName.TabIndex = 0;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // label1
             // 
@@ -322,6 +323,37 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Character Stats";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 307);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(97, 17);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Special Attack";
+            // 
+            // lblOffhand
+            // 
+            this.lblOffhand.AutoSize = true;
+            this.lblOffhand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblOffhand.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOffhand.Location = new System.Drawing.Point(82, 236);
+            this.lblOffhand.Name = "lblOffhand";
+            this.lblOffhand.Size = new System.Drawing.Size(122, 19);
+            this.lblOffhand.TabIndex = 29;
+            this.lblOffhand.Text = "                            ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 236);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 17);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Off-Hand:";
+            // 
             // lblS4Desc
             // 
             this.lblS4Desc.AutoSize = true;
@@ -512,37 +544,6 @@
             this.pcbHero.Size = new System.Drawing.Size(75, 75);
             this.pcbHero.TabIndex = 11;
             this.pcbHero.TabStop = false;
-            // 
-            // lblOffhand
-            // 
-            this.lblOffhand.AutoSize = true;
-            this.lblOffhand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblOffhand.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOffhand.Location = new System.Drawing.Point(82, 236);
-            this.lblOffhand.Name = "lblOffhand";
-            this.lblOffhand.Size = new System.Drawing.Size(122, 19);
-            this.lblOffhand.TabIndex = 29;
-            this.lblOffhand.Text = "                            ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 236);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 17);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Off-Hand:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 307);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 17);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "Special Attack";
             // 
             // Creator
             // 

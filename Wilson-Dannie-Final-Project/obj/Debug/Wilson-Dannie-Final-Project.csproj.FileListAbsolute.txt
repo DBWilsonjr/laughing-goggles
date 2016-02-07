@@ -95,7 +95,60 @@ D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilso
 D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Instruct.resources
 D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
 D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
-D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Preview.resources
 D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
 D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
 D:\Documents\GitHub\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Abilities.accdb
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.About.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Instruct.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+F:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Abilities.accdb
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.About.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Instruct.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+J:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe.config
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.exe
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.pdb
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Abilities.accdb
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Characters.accdb
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.exe
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\bin\Debug\Wilson-Dannie-Final-Project.pdb
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csprojResolveAssemblyReference.cache
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.About.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Bestiary.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Creator.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Intro.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Instruct.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.MainGame.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.PowerUp.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Properties.Resources.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson_Dannie_Final_Project.Unlocks.resources
+D:\Personal Projects\laughing-goggles\Wilson-Dannie-Final-Project\obj\Debug\Wilson-Dannie-Final-Project.csproj.GenerateResource.Cache

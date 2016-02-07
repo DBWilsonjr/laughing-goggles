@@ -57,6 +57,15 @@
             this.btnATK3 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnATK4 = new System.Windows.Forms.Button();
+            this.lblBattle = new System.Windows.Forms.Label();
+            this.lblShow1 = new System.Windows.Forms.Label();
+            this.lblShow2 = new System.Windows.Forms.Label();
+            this.lblShow3 = new System.Windows.Forms.Label();
+            this.lblShow4 = new System.Windows.Forms.Label();
+            this.lblDet1 = new System.Windows.Forms.Label();
+            this.lblDet2 = new System.Windows.Forms.Label();
+            this.lblDet3 = new System.Windows.Forms.Label();
+            this.lblDet4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbHero)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -268,7 +277,7 @@
             // 
             // pgbProt
             // 
-            this.pgbProt.Location = new System.Drawing.Point(291, 120);
+            this.pgbProt.Location = new System.Drawing.Point(291, 89);
             this.pgbProt.Maximum = 10;
             this.pgbProt.Name = "pgbProt";
             this.pgbProt.Size = new System.Drawing.Size(134, 23);
@@ -288,7 +297,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(288, 101);
+            this.label2.Location = new System.Drawing.Point(288, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 16);
             this.label2.TabIndex = 5;
@@ -297,7 +306,7 @@
             // btnATK1
             // 
             this.btnATK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnATK1.Location = new System.Drawing.Point(12, 380);
+            this.btnATK1.Location = new System.Drawing.Point(12, 361);
             this.btnATK1.Name = "btnATK1";
             this.btnATK1.Size = new System.Drawing.Size(119, 58);
             this.btnATK1.TabIndex = 6;
@@ -308,7 +317,7 @@
             // btnATK2
             // 
             this.btnATK2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnATK2.Location = new System.Drawing.Point(202, 380);
+            this.btnATK2.Location = new System.Drawing.Point(202, 361);
             this.btnATK2.Name = "btnATK2";
             this.btnATK2.Size = new System.Drawing.Size(119, 58);
             this.btnATK2.TabIndex = 7;
@@ -319,7 +328,7 @@
             // btnATK3
             // 
             this.btnATK3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnATK3.Location = new System.Drawing.Point(392, 380);
+            this.btnATK3.Location = new System.Drawing.Point(392, 361);
             this.btnATK3.Name = "btnATK3";
             this.btnATK3.Size = new System.Drawing.Size(119, 58);
             this.btnATK3.TabIndex = 8;
@@ -330,7 +339,7 @@
             // btnATK4
             // 
             this.btnATK4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnATK4.Location = new System.Drawing.Point(582, 380);
+            this.btnATK4.Location = new System.Drawing.Point(582, 361);
             this.btnATK4.Name = "btnATK4";
             this.btnATK4.Size = new System.Drawing.Size(119, 58);
             this.btnATK4.TabIndex = 9;
@@ -338,11 +347,119 @@
             this.btnATK4.UseVisualStyleBackColor = true;
             this.btnATK4.Click += new System.EventHandler(this.btnATK4_Click);
             // 
+            // lblBattle
+            // 
+            this.lblBattle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblBattle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBattle.Location = new System.Drawing.Point(290, 123);
+            this.lblBattle.Name = "lblBattle";
+            this.lblBattle.Size = new System.Drawing.Size(135, 58);
+            this.lblBattle.TabIndex = 10;
+            this.lblBattle.Text = "Battle\r\n";
+            this.lblBattle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShow1
+            // 
+            this.lblShow1.AutoSize = true;
+            this.lblShow1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShow1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblShow1.Location = new System.Drawing.Point(9, 426);
+            this.lblShow1.Name = "lblShow1";
+            this.lblShow1.Size = new System.Drawing.Size(39, 13);
+            this.lblShow1.TabIndex = 11;
+            this.lblShow1.Text = "Details";
+            this.lblShow1.Click += new System.EventHandler(this.lblShow1_Click);
+            // 
+            // lblShow2
+            // 
+            this.lblShow2.AutoSize = true;
+            this.lblShow2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShow2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblShow2.Location = new System.Drawing.Point(199, 426);
+            this.lblShow2.Name = "lblShow2";
+            this.lblShow2.Size = new System.Drawing.Size(39, 13);
+            this.lblShow2.TabIndex = 12;
+            this.lblShow2.Text = "Details";
+            this.lblShow2.Click += new System.EventHandler(this.lblShow2_Click);
+            // 
+            // lblShow3
+            // 
+            this.lblShow3.AutoSize = true;
+            this.lblShow3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShow3.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblShow3.Location = new System.Drawing.Point(389, 426);
+            this.lblShow3.Name = "lblShow3";
+            this.lblShow3.Size = new System.Drawing.Size(39, 13);
+            this.lblShow3.TabIndex = 13;
+            this.lblShow3.Text = "Details";
+            this.lblShow3.Click += new System.EventHandler(this.lblShow3_Click);
+            // 
+            // lblShow4
+            // 
+            this.lblShow4.AutoSize = true;
+            this.lblShow4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShow4.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.lblShow4.Location = new System.Drawing.Point(579, 426);
+            this.lblShow4.Name = "lblShow4";
+            this.lblShow4.Size = new System.Drawing.Size(39, 13);
+            this.lblShow4.TabIndex = 14;
+            this.lblShow4.Text = "Details";
+            this.lblShow4.Click += new System.EventHandler(this.lblShow4_Click);
+            // 
+            // lblDet1
+            // 
+            this.lblDet1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDet1.Location = new System.Drawing.Point(12, 449);
+            this.lblDet1.Name = "lblDet1";
+            this.lblDet1.Size = new System.Drawing.Size(119, 104);
+            this.lblDet1.TabIndex = 15;
+            this.lblDet1.Text = "label7";
+            this.lblDet1.Visible = false;
+            // 
+            // lblDet2
+            // 
+            this.lblDet2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDet2.Location = new System.Drawing.Point(202, 449);
+            this.lblDet2.Name = "lblDet2";
+            this.lblDet2.Size = new System.Drawing.Size(119, 104);
+            this.lblDet2.TabIndex = 16;
+            this.lblDet2.Text = "label9";
+            this.lblDet2.Visible = false;
+            // 
+            // lblDet3
+            // 
+            this.lblDet3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDet3.Location = new System.Drawing.Point(392, 449);
+            this.lblDet3.Name = "lblDet3";
+            this.lblDet3.Size = new System.Drawing.Size(119, 104);
+            this.lblDet3.TabIndex = 17;
+            this.lblDet3.Text = "label10";
+            this.lblDet3.Visible = false;
+            // 
+            // lblDet4
+            // 
+            this.lblDet4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDet4.Location = new System.Drawing.Point(582, 449);
+            this.lblDet4.Name = "lblDet4";
+            this.lblDet4.Size = new System.Drawing.Size(119, 104);
+            this.lblDet4.TabIndex = 18;
+            this.lblDet4.Text = "label11";
+            this.lblDet4.Visible = false;
+            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 562);
+            this.Controls.Add(this.lblDet4);
+            this.Controls.Add(this.lblDet3);
+            this.Controls.Add(this.lblDet2);
+            this.Controls.Add(this.lblDet1);
+            this.Controls.Add(this.lblShow4);
+            this.Controls.Add(this.lblShow3);
+            this.Controls.Add(this.lblShow2);
+            this.Controls.Add(this.lblShow1);
+            this.Controls.Add(this.lblBattle);
             this.Controls.Add(this.btnATK4);
             this.Controls.Add(this.btnATK3);
             this.Controls.Add(this.btnATK2);
@@ -357,6 +474,7 @@
             this.Name = "MainGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Temple Guardian";
+            this.Load += new System.EventHandler(this.frmLoad);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbHero)).EndInit();
@@ -398,5 +516,14 @@
         public System.Windows.Forms.ProgressBar pgbTemple;
         public System.Windows.Forms.Button btnATK4;
         public System.Windows.Forms.PictureBox pcbHero;
+        private System.Windows.Forms.Label lblBattle;
+        private System.Windows.Forms.Label lblShow1;
+        private System.Windows.Forms.Label lblShow2;
+        private System.Windows.Forms.Label lblShow3;
+        private System.Windows.Forms.Label lblShow4;
+        private System.Windows.Forms.Label lblDet1;
+        private System.Windows.Forms.Label lblDet2;
+        private System.Windows.Forms.Label lblDet3;
+        private System.Windows.Forms.Label lblDet4;
     }
 }

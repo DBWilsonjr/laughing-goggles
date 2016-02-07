@@ -470,42 +470,42 @@ namespace Wilson_Dannie_Final_Project
                 lblSkill4.Text = "Red Strike";
                 Globals.s4Name = "Red Strike";
                 lblS4Desc.Text = "A red-colored attack";
-                Globals.s4Tip = "a red-colored attack";
+                Globals.s4Tip = "A red-colored attack";
             }
             if (charOp5 == "Blue Strike")
             {
                 lblSkill4.Text = "Blue Strike";
                 Globals.s4Name = "Blue Strike";
                 lblS4Desc.Text = "A blue-colored attack";
-                Globals.s4Tip = "a blue-colored attack";
+                Globals.s4Tip = "A blue-colored attack";
             }
             if (charOp5 == "Yellow Strike")
             {
                 lblSkill4.Text = "Yellow Strike";
                 Globals.s4Name = "Yellow Strike";
                 lblS4Desc.Text = "A yellow-colored attack";
-                Globals.s4Tip = "a yellow-colored attack";
+                Globals.s4Tip = "A yellow-colored attack";
             }
             if (charOp5 == "Green Strike")
             {
                 lblSkill4.Text = "Green Strike";
                 Globals.s4Name = "Green Strike";
                 lblS4Desc.Text = "A green-colored attack";
-                Globals.s4Tip = "a green-colored attack";
+                Globals.s4Tip = "A green-colored attack";
             }
             if (charOp5 == "Orange Strike")
             {
                 lblSkill4.Text = "Orange Strike";
                 Globals.s4Name = "Orange Strike";
                 lblS4Desc.Text = "A orange-colored attack";
-                Globals.s4Tip = "a orange-colored attack";
+                Globals.s4Tip = "A orange-colored attack";
             }
             if (charOp5 == "Purple Strike")
             {
                 lblSkill4.Text = "Purple Strike";
                 Globals.s4Name = "Purple Strike";
                 lblS4Desc.Text = "A purple-colored attack";
-                Globals.s4Tip = "a purple-colored attack";
+                Globals.s4Tip = "A purple-colored attack";
             }
 
         }
@@ -557,6 +557,7 @@ namespace Wilson_Dannie_Final_Project
                     Globals.Difficulty = 5;
                 if (radHard.Checked == true)
                     Globals.Difficulty = 0;
+                Globals.pName = txtName.Text.ToString();
                 Globals.pClass = lblClass.Text.ToString();
                 mnform.lblPlayerClass.Text = txtName.Text.ToString() + " the " + lblClass.Text.ToString();
                 if (lblClass.Text.ToString() == "Huskarl")
@@ -589,31 +590,49 @@ namespace Wilson_Dannie_Final_Project
                     mnform.pcbHero.Image = Properties.Resources.Purplec;
                     Globals.placa = 6;
                 }
+                switch (lblWeapon.Text.ToString())
+                {
+                    case "Sword": Globals.ab1 = 101; Globals.ab1Cool = 4; Globals.ab2 = 102; Globals.ab2Val = 2; break;
+                    case "Handaxe": Globals.ab1 = 101; Globals.ab1Cool = 3; Globals.ab2 = 103; Globals.ab2Val = 2; break;
+                    case "Mace": Globals.ab1 = 104; Globals.ab1Cool = 3; Globals.ab2 = 105; Globals.ab2Val = 3; break;
+                    case "Hammer": Globals.ab1 = 104; Globals.ab1Cool = 2; Globals.ab2 = 106; Globals.ab2Val = 4; break;
+                    case "Staff": Globals.ab1 = 104; Globals.ab1Cool = 1; Globals.ab2 = 107; Globals.ab2Val = 1; break;
+                    case "Spear": Globals.ab1 = 108; Globals.ab1Cool = 4; Globals.ab2 = 110; Globals.ab2Val = 3; break;
+                    case "Bow": Globals.ab1 = 111; Globals.ab1Cool = 2; Globals.ab2 = 112; Globals.ab2Val = 2; break;
+                    case "Sling": Globals.ab1 = 111; Globals.ab1Cool = 1; Globals.ab2 = 113; Globals.ab2Val = 2; break;
+                    case "Gun": Globals.ab1 = 111; Globals.ab1Cool = 3; Globals.ab2 = 114; Globals.ab2Val = 4; break;
+                }
                 switch (lblSkill3.Text.ToString())
                 {
-                    case "Defend": Globals.ab3 = 301; break;
-                    case "Bleed Attack": Globals.ab3 = 320; break;
-                    case "Steel Song": Globals.ab3 = 302; break;
-                    case "Piercing Arrows": Globals.ab3 = 303; break;
-                    case "Poison Arrows": Globals.ab3 = 321; break;
-                    case "Tarot Card": Globals.ab3 = 330; break;
-                    case "Divination": Globals.ab3 = 308; break;
-                    case "Cursing Strike": Globals.ab3 = 322; break;
-                    case "Healing Light": Globals.ab3 = 304; break;
-                    case "Blood Letting": Globals.ab3 = 305; break;
-                    case "Hollowed Shot": Globals.ab3 = 306; break;
-                    case "Sudden Shot": Globals.ab3 = 307; break;
+                    //Buffs
+                    case "Defend": Globals.ab3 = 301; Globals.ab3Cool = 6; break;
+                    case "Steel Song": Globals.ab3 = 302; Globals.ab3Cool = 6; break;
+                    case "Healing Light": Globals.ab3 = 304; Globals.ab3Cool = 4; break;
+                    case "Blood Letting": Globals.ab3 = 305; Globals.ab3Cool = 6; break;
+                    case "Divination": Globals.ab3 = 308; Globals.ab3Cool = 6; break;
+                    //Debuffs
+                    case "Bleed Attack": Globals.ab3 = 320; Globals.ab3Cool = 3; break;
+                    case "Poisoned Shot": Globals.ab3 = 321; Globals.ab3Cool = 3; break;
+                    case "Cursing Strike": Globals.ab3 = 322; Globals.ab3Cool = 2; break;
+                    //Attacks
+                    case "Piercing Shot": Globals.ab3 = 303; Globals.ab3Cool = 0; break;
+                    case "Hollowed Shot": Globals.ab3 = 306; Globals.ab3Cool = 0; break;
+                    case "Sudden Shot": Globals.ab3 = 307; Globals.ab3Cool = 0; break;
+                    case "Tarot Card": Globals.ab3 = 330; Globals.ab3Cool = -1; break;
+                    //Attacks + Buff
+
+                    //Attacks + Debuff
 
                 }
 
                 switch (lblSkill4.Text.ToString())
                 {
-                    case "Red Strike": Globals.ab4 = 411; break;
-                    case "Blue Strike": Globals.ab4 = 412; break;
-                    case "Yellow Strike": Globals.ab4 = 413; break;
-                    case "Green Strike": Globals.ab4 = 414; break;
-                    case "Orange Strike": Globals.ab4 = 415; break;
-                    case "Purple Strike": Globals.ab4 = 416; break;
+                    case "Red Strike": Globals.ab4 = 401; Globals.ab4Cool = -1; Globals.s4Color = "Red"; break;
+                    case "Blue Strike": Globals.ab4 = 402; Globals.ab4Cool = -1; Globals.s4Color = "Blue"; break;
+                    case "Yellow Strike": Globals.ab4 = 403; Globals.ab4Cool = -1; Globals.s4Color = "Yellow"; break;
+                    case "Green Strike": Globals.ab4 = 404; Globals.ab4Cool = -1; Globals.s4Color = "Green"; break;
+                    case "Orange Strike": Globals.ab4 = 405; Globals.ab4Cool = -1; Globals.s4Color = "Orange"; break;
+                    case "Purple Strike": Globals.ab4 = 406; Globals.ab4Cool = -1; Globals.s4Color = "Purple"; break;
                 }
 
                 this.Hide();
@@ -623,6 +642,11 @@ namespace Wilson_Dannie_Final_Project
             {
                 MessageBox.Show("Please enter a name and fill in all fields", "Missing inputs");
             }
+        }
+
+        private void txtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
         }
     }
 }

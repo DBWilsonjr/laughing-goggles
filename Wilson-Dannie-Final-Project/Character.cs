@@ -8,8 +8,14 @@ namespace Wilson_Dannie_Final_Project
 {
     class Character
     {
-        private int _health, _force, _evade, _color, _buffBit, _buffVal, _buffTime, _debuffBit, _debuffVal, _debuffTime;
-        private int _ability1, _ability2, _ability3, _ab3Val, _ability4;
+        private int _health, _force, _evade, _color;
+        private int[] _buffBit = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private int[] _buffVal = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private int[] _buffTime = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private int[] _debuffBit = { 0, 0, 0, 0, 0, 0, 0 };
+        private int[] _debuffVal = { 0, 0, 0, 0, 0, 0, 0 };
+        private int[] _debuffTime = { 0, 0, 0, 0, 0, 0, 0 };
+        private int _ability1, _ability2, _ab2Val, _ability3, _ab3Cool, _ability4;
 
         public Character()
         {
@@ -25,8 +31,9 @@ namespace Wilson_Dannie_Final_Project
             _debuffTime = DEBUFFTIME;
             _ability1 = ABILITY1;
             _ability2 = ABILITY2;
+            _ab2Val = AB2VAL;
             _ability3 = ABILITY3;
-            _ab3Val = AB3VAL;
+            _ab3Cool = AB3COOL;
             _ability4 = ABILITY4;
         }
 
@@ -54,37 +61,37 @@ namespace Wilson_Dannie_Final_Project
             set { _color = value; }
         }
 
-        public int BUFFBIT
+        public int[] BUFFBIT
         {
             get { return _buffBit; }
             set { _buffBit = value; }
         }
 
-        public int BUFFVAL
+        public int[] BUFFVAL
         {
             get { return _buffVal; }
             set { _buffVal = value; }
         }
 
-        public int BUFFTIME
+        public int[] BUFFTIME
         {
             get { return _buffTime; }
             set { _buffTime = value; }
         }
 
-        public int DEBUFFBIT
+        public int[] DEBUFFBIT
         {
             get { return _debuffBit; }
             set { _debuffBit = value; }
         }
 
-        public int DEBUFFVAL
+        public int[] DEBUFFVAL
         {
             get { return _debuffVal; }
             set { _debuffVal = value; }
         }
 
-        public int DEBUFFTIME
+        public int[] DEBUFFTIME
         {
             get { return _debuffTime; }
             set { _debuffTime = value; }
@@ -102,16 +109,22 @@ namespace Wilson_Dannie_Final_Project
             set { _ability2 = value; }
         }
 
+        public int AB2VAL
+        {
+            get { return _ab2Val; }
+            set { _ab2Val = value; }
+        }
+
         public int ABILITY3
         {
             get { return _ability3; }
             set { _ability3 = value; }
         }
 
-        public int AB3VAL
+        public int AB3COOL
         {
-            get { return _ab3Val; }
-            set { _ab3Val = value; }
+            get { return _ab3Cool; }
+            set { _ab3Cool = value; }
         }
 
         public int ABILITY4
